@@ -90,4 +90,4 @@ app.get('*',(req,res)=>{
 app.listen(port,()=>{
     console.log('Server is up on '+port);
 })
-
+console.log(l)
