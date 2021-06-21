@@ -56,6 +56,7 @@ app.get('/weather',(req,res)=>{
             })    
      })
 })
+console.log(req.query.address)
 })
 
 app.get('/product',(req,res)=>{
