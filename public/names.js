@@ -1,5 +1,5 @@
 const name=(n)=>{
-    console.log(n)
+    const v=n
 }
 
 module.exports=name
