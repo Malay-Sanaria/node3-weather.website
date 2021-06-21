@@ -12,6 +12,7 @@ const m2=document.querySelector('#m2')
 weatherform.addEventListener('submit',(e)=>{
     e.preventDefault()
     const location=search.value
+    console.log(search.value)
     m1.textContent='Loading...'
     m2.textContent=""
     fetch('/weather?address='+location).then((res)=>{
