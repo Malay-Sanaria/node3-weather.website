@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            Weather
+        </title>
+            <link rel="stylesheet" href='./css/style.css'>
+            <link rel="icon" href='/img/cloudy.png'>
+    </head>
+
+    <body>
+       <div class="main" >{{>header}}
+       <p>USE THIS SITE TO GET YOUR WEATHER!</p>
+       <form>
+           <input placeholder="Location">
+           <button>Search</button>
+       </form>
+
+       <p id='m1'></p>
+       <p id='m2'></p>
+       </div>
+
+                   <script src='/js/app.js'></script>
+
+        <p>{{>footer}}</p>
+    </body>
+</html>
