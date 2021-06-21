@@ -28,3 +28,5 @@ weatherform.addEventListener('submit',(e)=>{
 })
 
 })
+
+module.exports=location
