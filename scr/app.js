@@ -10,6 +10,8 @@ const temppath=path.join(__dirname,'../templates/views');
 app.set('views',temppath);
 const partialspath=path.join(__dirname,'../templates/partials')
 hbs.registerPartials(partialspath)
+
+const port=process.env.PORT || 3000
 app.get('',(req,res)=>{
     res.render('index',{
         tittle:'Weather',
@@ -84,6 +86,6 @@ app.get('*',(req,res)=>{
     })
 })
 
-app.listen(3000,()=>{
-    console.log('Server is on');
+app.listen(port,()=>{
+    console.log('Server is up on '+port);
 })
