@@ -1,7 +1,3 @@
-console.log('Client side java script file is loaded.');
-
-
-
 const weatherform=document.querySelector('form')
 const search=document.querySelector('input')
 const m1=document.querySelector('#m1')
@@ -28,5 +24,3 @@ weatherform.addEventListener('submit',(e)=>{
 })
 
 })
-
-module.exports=location

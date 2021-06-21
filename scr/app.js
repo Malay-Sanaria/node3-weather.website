@@ -1,4 +1,3 @@
-const l=require("../public/js/app")
 const express=require('express');
 const app=express();
 const path=require('path');
@@ -90,4 +89,4 @@ app.get('*',(req,res)=>{
 app.listen(port,()=>{
     console.log('Server is up on '+port);
 })
-console.log(l)
+console.log('malay')
