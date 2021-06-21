@@ -41,7 +41,6 @@ app.get('/weather',(req,res)=>{
               err:'Address must be needed'
           })
     }
-    var n=req.query.address
      geocode(req.query.address,(err,data={})=>{
          if(err){
              return res.send({err})
@@ -90,4 +89,3 @@ app.get('*',(req,res)=>{
 app.listen(port,()=>{
     console.log('Server is up on '+port);
 })
-console.log(n)
