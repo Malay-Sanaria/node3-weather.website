@@ -41,7 +41,7 @@ app.get('/weather',(req,res)=>{
               err:'Address must be needed'
           })
     }
-    const n=req.query.address
+    var n=req.query.address
      geocode(req.query.address,(err,data={})=>{
          if(err){
              return res.send({err})
